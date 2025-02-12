@@ -1,0 +1,28 @@
+header{
+    padding: 10px;
+    background: black;
+    h1{
+        text-align: left;
+        color: white;
+        font-size: 50px;
+        font-family: helvetica, arial, sans-serif;
+    }
+    ul li{
+        display: inline;
+        float: right;
+        color: white;
+        font-size: 30px;
+        
+    }
+}
+
+body{
+    background-color: slategray;
+}
+footer{
+
+}
+img{
+    max-width: 50%;
+    height: auto;
+}
