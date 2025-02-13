@@ -5,31 +5,114 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- header section which displays name and links to following pages -->
 <header>
     <h1>Uziah Wilson</h1>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="index.html">About</a></li>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
+
+<!-- Start of section about. individual classes are formed for css styling purposes -->
 <section id="about">
     <!-- Not up to date nor professional. Update when possible -->
     <!-- TODO: alter image size through css so it's not a big blob in the middle of the screen -->
-    <img src="pictures/personal headshot.jpg">
-    <p>Hi there!</p>
-    <h2>My name is Uziah Wilson.</h2>
-    <p>A studying programmer interested in developing software and an aspiring artist. Connect with me!</p>
+
+
+    <div class="brief">
+        <div class="summary">
+            <p>A studying programmer interested in developing software and an aspiring artist.</p>
+        </div>
+        <div class="profile">
+            <img src="pictures/personal headshot.jpg">
+        </div>
+        <div class="greetings">
+            <p>Hi there! My name is Uziah Wilson.</p>
+    </div>
+    <br>
+    <br>
+    <div class="personal-info">
+        <div class="aboutme">
+            <p>Hi! I'm Uziah Wilson. I'm a studying programmer working their way through college. I am interested in software
+            development but am still trying to find that perfect niche to look into.</p>
+        </div>
+
+        <div class="resume">
+            <div class="skills">
+                <h2>My Skills</h2>
+
+                <!-- seperated individually to ensure they appear on their own -->
+                <div class="lhs">
+                    <ul>
+                        <li>Inspection and Quality Control</li>
+                        <li>Computer Programming</li>
+                        <li>Punctual and Reliable</li>
+                    </ul>
+                </div>
+                <div class="rhs">
+                    <ul>
+                        <li>Self Motivated and Independent</li>
+                        <li>Attention to Detail</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work">
+                <h2>Work Experience</h2>
+                <h3>Grading Assistant, New Mexico Department of Agriculture. Las Cruces, NM.</h3>
+                <ul>
+                    Assisted inspectors in grading agricultural goods in season.
+                    Collected samples at random for inspections.
+                    Followed USDA guidelines in agricultural goods during inspections.
+                </ul>
+                <br>
+                <h3>Recieving Associate, Burlington Coat Factory. Las Cruces, NM.</h3>
+                <ul>
+                    Recieved incoming shipments and verified contents.
+                    Followed Burlington SOPs by accurately sorting items based on size, type, style, or product code and ensured proper security measures were in place.
+                    Stocked shelves with newly arrived inventory and removed outdated items.
+                    Inspected goods for damages or defects and reported issues to superviosr.
+                </ul>
+                <br>
+                <h3>SNAP Volunteer, Roadrunner Food Bank of New Mexico. Albuquerque, NM.</h3>
+                <ul>
+                    Assisted callers in completing applications for SNAP benefits.
+                    Provided information related to applications.
+                </ul>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2>Education</h2>
+            <div class="nmsu">
+                <h3>Bachelor of Science</h3>
+                <p>Computer Science, New Mexico State University. Las Cruces, NM. Expected 2026</p>
+            </div>
+            <br>
+            <div class="sipi">
+                <h3>Associate of Arts</h3>
+                <p>Liberal Arts, Southwestern Indian Polytechnic Institute. Albuquerque, NM. April 2023</p>
+            </div>
+        </div>
+    </div>
+
 </section>
+
+<!-- start of footer element. displays name and links to social media -->
 <footer>
     <p>Uziah Wilson</p>
-    <ul>
-        <<!-- TODO: alter the png sizes so they are not taking up the entire bottom portion of the footer -->
-        <li><img src="pictures/instagram.png"></li>
-        <li><img src="pictures/github.png"></li>
-    </ul>
+    <div class="socials">
+        <ul>
+            <<!-- TODO: alter the png sizes so they are not taking up the entire bottom portion of the footer -->
+            <li><img src="pictures/instagram.png"></li>
+            <li><img src="pictures/github.png"></li>
+        </ul>
+    </div>
 </footer>
 </body>
 </html>
