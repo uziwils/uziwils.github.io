@@ -42,6 +42,7 @@ footer{
     padding: 15px 20px;
     /** as an impromptu copyright, name is displayed as a p element and aligned left **/
     p{
+        color: white;
         font-size: 1.2rem;
         font-family: helvetica, arial, sans-serif;
     }
@@ -64,23 +65,28 @@ footer{
     }
 }
 
+/** brief introduction styling at top of landing page accompanied by image **/
 .brief{
     background: black;
     margin:0;
     width: 100%;
     padding: 20px 0;
-    .greetings{
-        text-align: center;
-        font-size: 1.2rem;
-        margin: 0;
-    }
-    .summary{
+    color: white;
+    .greetings p{
         text-align: center;
         font-size: 1.5rem;
-        margin: 0;
+        margin: 5px;
+        padding: 10px;
+    }
+    .summary p{
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 10px;
+        padding: 10px;
     }
 }
 
+/** properties for centered image appearing at top of landing page **/
 .profile{
     display: flex;
     justify-content: center;
@@ -94,37 +100,41 @@ footer{
 
 .personal-info{
     background-color: lightgray;
+    margin: 0;
 }
 
 .aboutme{
+    color: black;
+    margin: 50px;
     padding: 25px 0;
     text-align: center;
     font-size: 1.2rem;
 }
 
 .resume{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
     width: 90%;
     margin: auto;
 }
 
-.skills{
-    h2{
-        font-size: 2.5rem;
-        text-align: left;
-    }
-    .lhs{
-        list-style: none;
-        text-align: left;
-        display:
-    }
-    .rhs{
-        list-style: none;
-        text-align: right;
-    }
+.skills-languages {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-languages h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skills-list > div{
+    text-align: left;
 }
 
 .work{
@@ -133,32 +143,219 @@ footer{
         text-align: right;
     }
     h3{
-    text-align: right;
-         }
+        text-align: right;
+        font-size: 1.8rem;
+    }
     ul{
+        list-style: none;
         text-align: right;
     }
+}
+
+.education{
+    color: black;
+    margin: 50px;
+    h2{ font-size: 2.5rem; }
+    h3{ font-size: 1.8rem; }
 }
 img{
     max-width: 50%;
     height: auto;
 }
 
+/** styling elements for Projects.html **/
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.card-image{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card-image img[alt="Card Challenger 1"]{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card-overlay,
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    max-width: 100%;
+    height: 0;
+    transition: .5s ease;
+    margin: auto;
+}
+
+.projects:hover .card-overlay,
+.projects:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+
+.card-challenger-text,
+.card-artwork-3{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/** following styles the art page from projects **/
+.overview h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.overview p{
+    text-align: center;
+    padding: 10px;
+}
+
+.tonal h3 { padding: 10px; }
+
+.tonal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tonal img{
+    max-width: 40%;
+}
+
+.tonal p{
+    padding: 10px;
+}
+
+.subtractive-title{
+    padding: 10px;
+    text-align: left;
+}
+
+.subtractive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtractive img{
+    max-width: 40%;
+    order: -1;
+}
+
+.subtractive p{
+    padding: 10px;
+    text-align: left;
+}
+
+.scratchpaper-title{
+    padding: 10px;
+    text-align: left;
+}
+
+.scratchpaper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scratchpaper img{
+    max-width: 40%;
+    order: -1;
+}
+
+.scratchpaper p{
+    padding: 10px;
+    text-align: left;
+}
+
+/** following style the coding.html **/
+
+.card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card1 img{
+    max-width: 40%;
+}
+
+.card1 p{
+    padding: 10px;
+    text-align: left;
+}
+
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card2 img{
+    max-width: 40%;
+}
+
+.card2 p{
+    padding: 10px;
+    text-align: left;
+}
+
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card3 img{
+    max-width: 40%;
+}
+
+.card3 p{
+    padding: 10px;
+    text-align: left;
+}
+
 /** as the font is relatively the same across all htmls, fonts are set here **/
 p{
     font-family: helvetica, arial, sans-serif;
+    font-size: 1.2rem;
 }
 h1{
     font-family: helvetica, arial, sans-serif;
 }
 h2{
     font-family: helvetica, arial, sans-serif;
+    font-size: 2.5rem;
 }
 h3{
     font-family: helvetica, arial, sans-serif;
+    font-size: 1.8rem;
+}
+h4{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.5rem;
 }
 ul{
     font-family: helvetica, arial, sans-serif;
+    font-size: 1.2rem;
 }
 /** shared background color across all pages **/
 body{
