@@ -1,127 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>My Personal Website</title>
+    <title>Blackjack Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<h1>Blackjack</h1>
 
-<!-- header section which displays name and links to following pages -->
-<header>
-    <h1>Uziah Wilson</h1>
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- sets the proper buttons to start the game, hit, and stand. -->
+<button id="start">Start Game</button>
+<button id="hit">Hit</button>
+<button id="stand">Stand</button>
 
-<!-- Start of section about. individual classes are formed for css styling purposes -->
-<section id="about">
-    <!-- Not up to date nor professional. Update when possible -->
-    <!-- TODO: alter image size through css so it's not a big blob in the middle of the screen -->
-
-    <div class="top-page">
-        <div class="brief">
-            <div class="summary">
-                <p>A studying programmer interested in developing software and an aspiring artist.</p>
-            </div>
-            <div class="profile">
-                <img src="pictures/personal headshot.jpg">
-            </div>
-            <div class="greetings">
-                <p>Hi there! My name is Uziah Wilson.</p>
-        </div>
+<!-- sets the game container to help display a flexbox where the dealer card is above the
+    player cards and the player cards are side by side -->
+<div class="game-container">
+    <!-- dealer's container -->
+    <div class="dealer-section">
+        <h2>Dealer's Hand</h2>
+        <div id="dealer-hand" class="hand"></div>
+        <p>Score: <span id="dealer-score">0</span></p>
     </div>
 
-    <div class="personal-info">
-        <div class="aboutme">
-            <p>Hi! I'm Uziah Wilson. I'm a studying programmer working their way through college. I am interested in software
-            development but am still trying to find that perfect niche to look into.</p>
+    <!-- players' container -->
+    <div class="players-section">
+        <div class="player-section">
+            <h2>Player 1</h2>
+            <div id="player1-hand" class="hand"></div>
+            <p>Score: <span id="player1-score">0</span></p>
         </div>
 
-        <div class="resume">
-            <div class="skills-languages">
-                <h2>My Skills</h2>
-                <div class="skill-list">
-                    <div class="skills">
-                        <ul>
-                            <li>Inspection and Quality Control</li>
-                            <li>Computer Programming</li>
-                            <li>Punctual and Reliable</li>
-                            <li>Self Motivated and Independent</li>
-                            <li>Attention to Detail</li>
-                        </ul>
-                    </div>
-                </div>
-                <h2>Programming Lanugages</h2>
-                <div class="languages">
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C/C++</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="work">
-                <h2>Work Experience</h2>
-                <h3>Grading Assistant, New Mexico Department of Agriculture. Las Cruces, NM.</h3>
-                <ul>
-                    <li>Assisted inspectors in grading agricultural goods in season.</li>
-                    <li>Collected samples at random for inspections.</li>
-                    <li>Followed USDA guidelines in agricultural goods during inspections.</li>
-                </ul>
-                <br>
-                <h3>Receiving Associate, Burlington Coat Factory. Las Cruces, NM.</h3>
-                <ul>
-                    <li>Received incoming shipments and verified contents.</li>
-                    <li>Followed Burlington SOPs by accurately sorting items based on size, type, style, or product code
-                        and ensured proper security measures were in place.</li>
-                    <li>Stocked shelves with newly arrived inventory and removed outdated items.</li>
-                    <li>Inspected goods for damages or defects and reported issues to supervisor.</li>
-                </ul>
-                <br>
-                <h3>SNAP Volunteer, Roadrunner Food Bank of New Mexico. Albuquerque, NM.</h3>
-                <ul>
-                    <li>Assisted callers in completing applications for SNAP benefits.
-                    <li>Provided information related to applications.
-                </ul>
-            </div>
-        </div>
-
-        <div class="education">
-            <h2>Education</h2>
-            <div class="nmsu">
-                <h3>Bachelor of Science</h3>
-                <p>Computer Science, New Mexico State University. Las Cruces, NM. Expected 2026</p>
-            </div>
-            <br>
-            <div class="sipi">
-                <h3>Associate of Arts</h3>
-                <p>Liberal Arts, Southwestern Indian Polytechnic Institute. Albuquerque, NM. April 2023</p>
-            </div>
+        <div class="player-section">
+            <h2>Player 2</h2>
+            <div id="player2-hand" class="hand"></div>
+            <p>Score: <span id="player2-score">0</span></p>
         </div>
     </div>
+</div>
 
-</section>
+<!-- simply displays the ending message informing players on status of games. this string
+    is fed from the javascript file -->
+<h2 id="message"></h2>
 
-<!-- start of footer element. displays name and links to social media -->
-<footer>
-    <p>Uziah Wilson</p>
-    <div class="socials">
-        <ul>
-            <<!-- TODO: alter the png sizes so they are not taking up the entire bottom portion of the footer -->
-            <li><a href="https://www.instagram.com/mrkravs__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <img src="pictures/instagram.png"></li>
-            </a>
-            <li><a href="https://github.com/uziwils">
-                <img src="pictures/github.png"></li>
-            </a>
-        </ul>
-    </div>
-</footer>
+<script src="index.js"></script>
 </body>
+
 </html>
